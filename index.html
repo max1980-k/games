@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex" />
+        <title>Game Support & Privacy Center</title>
+        <style>
+            body {
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    Helvetica, Arial, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f4f4f9;
+            }
+            header {
+                text-align: center;
+                padding: 40px 0;
+            }
+            .game-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 20px;
+            }
+            .game-card {
+                background: white;
+                padding: 20px;
+                border-radius: 12px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.2s;
+            }
+            .game-card:hover {
+                transform: translateY(-5px);
+            }
+            .game-card h2 {
+                margin-top: 0;
+                color: #2c3e50;
+            }
+            .btn {
+                display: inline-block;
+                background: #007bff;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 6px;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            .btn:hover {
+                background: #0056b3;
+            }
+            footer {
+                text-align: center;
+                margin-top: 50px;
+                font-size: 0.9em;
+                color: #666;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Game Portfolio</h1>
+            <p>
+                Select a game to view its Privacy Policy and Support
+                information.
+            </p>
+        </header>
+
+        <main class="game-grid">
+            <div class="game-card">
+                <h2>Snake Maze</h2>
+                <p>
+                    A challenging puzzle adventure through mysterious corridors.
+                </p>
+                <a href="privacy/snake-maze.html" class="btn">Privacy Policy</a>
+            </div>
+
+            <div class="game-card">
+                <h2>Voxel Craft</h2>
+                <p>Explore and build in a vast, infinite block-based world.</p>
+                <a href="privacy/voxel-craft.html" class="btn"
+                    >Privacy Policy</a
+                >
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Your Studio Name. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
